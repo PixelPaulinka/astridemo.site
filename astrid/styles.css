@@ -1,0 +1,182 @@
+/* Подключаем шрифт через @font-face */
+@font-face {
+    font-family: 'SpotifyMixExtrabold';
+    src: url('fonts/SpotifyMix-Extrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Общие стили */
+body {
+    font-family: 'SpotifyMixExtrabold', sans-serif;  /* Применяем шрифт для всего body */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f0f0f5;
+    scroll-behavior: smooth;
+}
+
+/* Заголовки (h1, h2, h3, h4, h5, h6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'SpotifyMixExtrabold', sans-serif;  /* Применяем шрифт ко всем заголовкам */
+}
+
+/* Хедер */
+.hero {
+    height: 98vh;
+    background: linear-gradient(135deg, #6a11cb, #ff6f00);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 50px;
+    font-size: 1.5em;
+    color: #fff;
+    background: #ff4500;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #ff2200;
+}
+
+/* Прокрутка вниз */
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1.5em;
+    animation: bounce 1.5s infinite;
+}
+
+/* Секция преимуществ */
+.features {
+    text-align: center;
+    padding: 100px 20px;
+    background: #fff;
+}
+
+.features h2 {
+    font-size: 3em;
+    color: #ff6f00;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #6a11cb;
+    font-size: 2em;
+}
+
+/* О приложении */
+.about {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f0f0f5;
+}
+
+.about img {
+    max-width: 80%;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ff6f00, #6a11cb);
+    color: #fff;
+}
+
+.btn-cta {
+    background: #ff6600;
+    box-shadow: 0 10px 30px rgba(255, 102, 0, 0.3);
+}
+
+/* Футер */
+.footer {
+    text-align: center;
+    padding: 5px;
+    background: #222;
+    color: #fff;
+}
+
+/* Анимации */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes bounceIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.animated-text {
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+.zoom-in {
+    animation: zoomIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+
