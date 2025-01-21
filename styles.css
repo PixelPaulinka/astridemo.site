@@ -1,7 +1,7 @@
 /* Подключаем шрифт через @font-face */
 @font-face {
     font-family: 'SpotifyMixExtrabold';
-    src: url('DespairDisplay-Bold.otf') format('truetype');
+    src: url('fonts/SpotifyMix-Extrabold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
     background: #ff2200;
 }
 
@@ -176,6 +176,53 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes zoomIn {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
+}
+
+
+
+/* Добавьте это в файл styles.css */
+.emotion-analysis {
+    padding: 50px 0;
+    text-align: center;
+}
+
+textarea {
+    width: 700px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ecf0f3;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #d1d8e0;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    textarea {
+        width: 350px; /* Занимает всю доступную ширину */
+        height:300px; /* Высота зависит от ширины, создавая квадрат */
+        aspect-ratio: 1; /* Соотношение сторон 1:1 для квадратной формы */
+    }
 }
 
 
