@@ -1,7 +1,7 @@
 /* Подключаем шрифт через @font-face */
 @font-face {
     font-family: 'SpotifyMixExtrabold';
-    src: url('fonts/SpotifyMix-Extrabold.ttf') format('truetype');
+    src: url('DespairDisplay-Bold.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
