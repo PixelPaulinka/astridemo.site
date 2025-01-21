@@ -22,14 +22,14 @@
         .then(response => response.json())
         .then(data => displayEmotions(data[0]))
         .catch(error => {
-            document.getElementById('result').innerHTML = `⚠️ Ошибка: ${error}`;
+            document.getElementById('result').innerHTML = `⚠️ Ошибка.Попробуйте ещё раз`;
         });
     }
 
     // Функция для отображения результатов
     function displayEmotions(emotions) {
         if (!emotions || emotions.length === 0) {
-            document.getElementById('result').innerHTML = '⚠️ Не удалось определить эмоции.';
+            document.getElementById('result').innerHTML = '⚠️ Не удалось определить эмоции.Попробуйте ещё раз';
             return;
         }
 
