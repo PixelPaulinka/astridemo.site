@@ -216,6 +216,99 @@ button:hover {
     color: #333;
     font-weight: bold;
 }
+.loading {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.text-container {
+    font-family: 'Helvetica Neue', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff5f0; /* Светлый оранжевый фон */
+}
+
+.section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #fff1e6; /* Теплый оранжевый фон */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(255, 90, 0, 0.08); /* Оранжевая тень */
+    border: 1px solid #ffd4c1; /* Светлая оранжевая граница */
+}
+
+.section-title {
+    color: #c72a00; /* Темно-красный цвет */
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #ff6b35; /* Яркая оранжевая линия */
+}
+
+.section-line {
+    display: flex;
+    align-items: start;
+    margin: 0.8rem 0;
+    line-height: 1.6;
+    transition: transform 0.2s ease; /* Анимация при наведении */
+}
+
+.section-line:hover {
+    transform: translateX(5px); /* Эффект при наведении */
+}
+
+.decorator {
+    width: 8px;
+    height: 8px;
+    background: #ff4400; /* Ярко-оранжевый акцент */
+    border-radius: 50%;
+    margin: 0.6rem 1rem 0 0;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(255, 68, 0, 0.2);
+}
+
+.section-line p {
+    margin: 0;
+    color: #662100; /* Темно-коричневый для текста */
+    font-size: 1rem;
+    line-height: 1.7;
+    position: relative;
+}
+
+/* Дополнительные акценты */
+.section-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 1px;
+    background: linear-gradient(90deg, #ff6b35 0%, transparent 100%);
+}
+
+/* Кнопки (если есть в вашем интерфейсе) */
+.btn {
+    background: #ff4400;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #c72a00;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 68, 0, 0.3);
+}
 /* Медиазапрос для мобильных устройств */
 @media (max-width: 768px) {
     textarea {
@@ -224,4 +317,6 @@ button:hover {
         aspect-ratio: 1; /* Соотношение сторон 1:1 для квадратной формы */
     }
 }
+
+
 
