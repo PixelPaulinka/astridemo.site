@@ -20,7 +20,7 @@ function analyzeEmotions() {
     };
 
     // Отправка запроса на API
-    fetch(deepseekUrl, {
+    fetch(ApiUrl, {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${apiToken}`,
